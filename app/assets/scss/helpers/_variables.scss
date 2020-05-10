@@ -7,7 +7,7 @@
 
 // Brand colors
 
-$primary: #f5a637;
+$primary: #d8b370;
 $gray: #f0f0f0;
 
 
@@ -23,7 +23,8 @@ $body-color: #777777;
 $font-family-sans-serif: 'Lato', sans-serif;
 $font-family-base: $font-family-sans-serif;
 
-$headings-font-family: 'Playfair Display', serif;
+$headings-font-family: 'Lora', serif;
+// $headings-font-family: 'Playfair Display', serif;
 $headings-font-weight: 400;
 $headings-line-height: 1.42857143;
 $headings-color: #151515;
@@ -88,6 +89,7 @@ $btn-border-radius-sm: $btn-border-radius;
 $btn-border-radius-lg: $btn-border-radius;
 
 $btn-transition: color .1s;
+// $btn-transition: color .5s;
 
 $btn-primary-bg: transparent;
 $btn-primary-border: $primary;

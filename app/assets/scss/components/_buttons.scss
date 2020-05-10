@@ -15,7 +15,8 @@
 	// Contextual classes
 
 	&-default, &-primary {
-		background-color: transparent;
+		// background-color: transparent;
+		background-color: $primary;
 		color: $headings-color;
 
 		&[disabled] {
