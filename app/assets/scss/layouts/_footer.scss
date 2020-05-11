@@ -68,7 +68,16 @@
 
 			&__days {
 				@include font-small();
-				font-weight: 900;
+				font-weight: 400;
+				font-size: 0.9em;
+				
+				.footer_days_element {
+					padding-left: 0;
+				}
+
+				.footer_time_element {
+					padding-left: 0;
+				}
 			}
 			&__time {
 				font-family: $headings-font-family;

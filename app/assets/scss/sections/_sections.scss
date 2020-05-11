@@ -116,6 +116,15 @@
 					// color: $primary;
 					color: fade-out(white, .3);
 				}
+
+				> a {
+					color: fade-out(white, .3);
+					transition: color .1s;
+
+					&:hover, &:focus, &:active, &:active:hover, &:active:focus {
+						color: $primary;   
+					}
+				}
 			}
 		}
 	}

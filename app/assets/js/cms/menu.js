@@ -21,6 +21,79 @@ const menu = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+DO NOT TOUCH ANYTHING BELOW THIS LINE
+===============================================================================================
+DO NOT TOUCH ANYTHING BELOW THIS LINE
+**/
+
 const templateElement = document.getElementById('menu-template-handlebars');
 
 let templateSource = templateElement.innerHTML;
@@ -30,5 +103,3 @@ let template = Handlebars.compile(templateSource);
 let compiledHtml = template(menu);
 
 document.getElementById('menu_images').innerHTML = compiledHtml;
-console.log("bayi");
-console.log(compiledHtml);

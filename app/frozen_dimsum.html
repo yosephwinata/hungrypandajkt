@@ -28,8 +28,8 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
 	<!-- Handlebars Template -->
-	<script id="menu-template-handlebars" type="text/x-handlebars-template">
-		{{#each menuList}}
+	<script id="frozendimsum-template-handlebars" type="text/x-handlebars-template">
+		{{#each frozenDimsumList}}
 			<div class="col-md-6 section_menu__grid__item {{this.category}}">
 				<div class="section_menu__item">
 					<div class="row">
@@ -52,34 +52,14 @@
 		{{/each}}
 	</script>
 
-	<script id="featured-menu-template-handlebars" type="text/x-handlebars-template">
-		{{#each featuredMenuList}}
-			<div class="section_dishes__carousel__item">
-
-				<!-- Image -->
-				<img src="assets/img/featured_menu/{{this.image}}" alt="{{this.name}}" class="section_dishes__carousel__item__img">
-
-				<!-- Body -->
-				<div class="section_dishes__carousel__item__body">
-					<h5 class="section_dishes__carousel__item__body__heading mb-0">
-						{{this.name}} <span>{{this.price}}</span>
-					</h5>
-				</div>
-
-			</div>
-		{{/each}}
-	</script>
-
   </head>
   <body>
 
-	
 	<!-- NAVBAR
 	================================================== -->
 	<nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar-outerlayer">
 		<!-- innerHTML will be populated by Javascript. In order to reuse the navbar on all pages. -->
-	</nav> <!-- / .navbar -->
-
+	</nav> <!-- / .navbar -->	
 
 	<!-- HEADER
 	================================================== -->
@@ -90,7 +70,7 @@
 					
 					<!-- Heading -->
 					<h1 class="section__heading section_header__heading text-center">
-						Our Menu
+						Frozen Dimsum
 					</h1>
 
 				</div>
@@ -104,65 +84,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-	
-					<!-- Heading -->
-					<!-- <h2 class="section__heading text-center">
-						Prices are in thousand Indonesian Rupiah
-					</h2> -->
-					<!-- <p class="section__subheading text-center">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Ratione numquam eos perferendis itaque hic unde, ad, laudantium minima.
-					</p> -->
-	
-				</div>
-			</div> <!-- / .row -->
-			<div class="row">
-				<div class="col">
 					
 					<!-- Navigation -->
 					<nav class="section_menu__nav" id="menu_nav">
 						<ul>
 							<li class="active">
-								<a href="#menu_images" data-filter=".dimsum">Dimsum</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".appetizer">Appetizer</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".fish">Fish</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".beef">Beef</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".chicken">Chicken</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".shrimp">Shrimp</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".squid">Squid</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".softshellcrab">Soft-Shell Crab</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".beancurdegg">Beancurd & Egg</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".veggie">Veggie</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".individual">Individual</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".setmenu">Set Menu</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".dessert">Dessert</a>
-							</li>
-							<li>
-								<a href="#menu_images" data-filter=".drink">Drink</a>
+								<a href="#frozen_dimsum_images" data-filter=".frozendimsum">Frozen Dimsum</a>
 							</li>
 						</ul>
 					</nav>
@@ -170,40 +97,10 @@
 				</div>
 			</div>
 
-			<!--div to be populated with menu items using Handlebars-->
-			<div class="row section_menu__grid" id="menu_images"></div>
+			<!--div to be populated with items using Handlebars-->
+			<div class="row section_menu__grid" id="frozen_dimsum_images"></div>
 
 		</div> <!-- / .container -->
-	</section>
-
-	<!-- FEATURED DISHES
-	================================================== -->
-	<section class="section section_dishes">
-
-		<!-- Header -->
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					
-					<!-- Heading -->
-					<h2 class="section__heading text-center">
-						Our Bestsellers
-					</h2>
-
-					<!-- Subheading -->
-					<!-- <p class="section__subheading text-center">
-						Quibusdam in labore tempore quidem voluptatum ullam soluta! Maiores!
-					</p> -->
-
-				</div>
-			</div>
-		</div>
-
-		<!-- Carouse -->
-		<div class="section_dishes__carousel" id="featured_menu_carousel">
-			<!--the innerHTML will be populated by Handlebars-->
-		</div> <!-- / .section_dishes__carousel -->
-
 	</section>
 
 	<!-- FOOTER
@@ -216,8 +113,7 @@
 	================================================== -->
 
 	<!-- JS Custom -->
-	<script src="assets/js/cms/menu.js"></script>
-	<script src="assets/js/cms/featured_menu.js"></script>
+	<script src="assets/js/cms/frozen_dimsum.js"></script>
 
 
 	<!-- JS Global -->

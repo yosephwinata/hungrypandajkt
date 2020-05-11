@@ -13205,8 +13205,7 @@ input[type='time'].form-control-sm
 .navbar-brand
 {
     font-family: 'Lora', serif;
-    font-size: 2rem;
-    font-style: italic;
+    font-size: 1.5rem;
 
     transition: color .1s;
 }
@@ -13684,6 +13683,20 @@ body
 
     color: rgba(255, 255, 255, .7);
 }
+.section_welcome__footer__address > a
+{
+    transition: color .1s; 
+
+    color: rgba(255, 255, 255, .7);
+}
+.section_welcome__footer__address > a:hover,
+.section_welcome__footer__address > a:focus,
+.section_welcome__footer__address > a:active,
+.section_welcome__footer__address > a:active:hover,
+.section_welcome__footer__address > a:active:focus
+{
+    color: #d8b370;
+}
 .section_about
 {
     min-height: 500px; 
@@ -13882,11 +13895,20 @@ body
 {
     font-family: 'Lato', sans-serif;
     font-size: .75rem;
+    font-size: .9em; 
     font-weight: 700;
-    font-weight: 900; 
+    font-weight: 400;
 
     letter-spacing: .05em;
     text-transform: uppercase;
+}
+.section_footer__open__days .footer_days_element
+{
+    padding-left: 0;
+}
+.section_footer__open__days .footer_time_element
+{
+    padding-left: 0;
 }
 .section_footer__open__time
 {

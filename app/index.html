@@ -31,48 +31,8 @@
 
 	<!-- NAVBAR
 	================================================== -->
-	<nav class="navbar navbar-light navbar-expand-lg fixed-top">
-		<div class="container">
-
-			<!-- Navbar: Toggler -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			
-			<!-- Navbar: Collapse -->
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-				<!-- Navbar navigation: Right -->
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#index_event_1">Private Event</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#index_catering_1">Catering</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#index_delivery_1">Delivery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="menu.html">Menu</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="gallery.html">Frozen Dimsum</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#footer">Hours & Location</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact-us.html">Contact</a>
-					</li>
-				</ul>
-
-			</div> <!-- / .navbar-collapse -->
-
-		</div> <!-- / .container -->
+	<nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar-outerlayer">
+		<!-- innerHTML will be populated by Javascript. In order to reuse the navbar on all pages. -->
 	</nav> <!-- / .navbar -->
 
 	<!-- WELCOME
@@ -133,16 +93,16 @@
 									<i class="fab fa-instagram"></i>
 								</a>
 							</li> -->
-							<li>
-								<a href="#">
-									<i class="fab fa-whatsapp"> 08164857070</i>
-								</a>
+							<li id="welcome-section-whatsapp">
+								<!-- <a href="tel:08164857070">
+									<i class="fab fa-whatsapp" id="welcome-section-whatsapp"> </i>
+								</a> -->
 							</li>
 							<br>
-							<li>
-								<a href="#">
+							<li id="welcome-section-instagram">
+								<!-- <a href="https://www.instagram.com/hungrypanda.gading">
 									<i class="fab fa-instagram"> hungrypanda.gading</i>
-								</a>
+								</a> -->
 							</li>
 						</ul>
 
@@ -150,9 +110,10 @@
 					<div class="col-md">
 						
 						<!-- Address -->
-						<div class="section_welcome__footer__address text-center text-lg-right d-none d-lg-block">
-							<i class="fas fa-map-marker-alt"></i> Jl. Boulevard Raya PA19/9, Kelapa Gading, Jakarta Utara<br>
-							Free delivery within Kelapa Gading area
+						<div class="section_welcome__footer__address text-center text-lg-right d-none d-lg-block" id="welcome-section-address">
+							<!-- <i class="fas fa-map-marker-alt"></i><a href="http://maps.google.com/?q=Hungry Panda" style=""> Jl. Boulevard Raya PA19/9, Kelapa Gading, Jakarta Utara</a>
+							<br>
+							Free delivery within Kelapa Gading area -->
 						</div>
 
 					</div>
@@ -202,7 +163,7 @@
 						<p class="section__subheading">
 							Our private room can accomodate up to 40 guests. Fully equipped with a karaoke system. Suitable for all types of events including birthday parties, bridal showers, business meetings, reunions, chinese new year dinner, sangjit, and any other private events. The room is all yours! You could even decorate the room if you like.
 						</p>
-						<a href="contact-us.html" class="btn btn-primary">
+						<a href="#footer" class="btn btn-primary">
 							Contact Us
 						</a>
 					</div>
@@ -235,9 +196,9 @@
 							Our catering service
 						</h2>
 						<p class="section__subheading">
-							Whether you have an event of 50, 100, 500, or even more than 1000 pax; we will make sure that your guests are well-served with the best service. We will come to your venue, and provide the prasmanan set and cutleries so you can enjoy your events and let us handle the little details. Contact us for more information.
+							Whether you have an event of 50, 100, 500, or even more than 1000 pax; we will make sure that your guests are well-catered with quality meals. We will come to your venue, and provide the prasmanan set and cutleries so you can enjoy your events and let us handle the little details. Contact us for more information.
 						</p>
-						<a href="contact-us.html" class="btn btn-primary">
+						<a href="#footer" class="btn btn-primary">
 							Contact Us
 						</a>
 					</div>
@@ -310,10 +271,10 @@
 									<!-- Blockquote -->
 									<blockquote class="section_testimonials__blockquote mx-auto">
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at veritatis vitae modi ex quis quibusdam error repudiandae adipisci dolore perspiciatis iste, vel fuga a, libero architecto ratione deleniti sequi.
+											I tried their catering service for my birthday party and was delighted. They came my house and set up everything. The food was superb and the service was excellent.
 										</p>
 										<footer class="text-muted">
-											Elisabeth Doe
+											Nikita T
 										</footer>
 									</blockquote>
 
@@ -390,7 +351,7 @@
 								</p>
 
 								<!-- Button -->
-								<a href="contact-us.html" class="btn btn-primary text-white">
+								<a href="#footer" class="btn btn-primary text-white">
 									Contact Us
 								</a>
 
@@ -626,67 +587,7 @@
 	<!-- FOOTER
 	================================================== -->
 	<footer class="section section_footer" id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-				
-					<!-- About Us -->
-					<h5 class="section_footer__heading">
-						About Us
-					</h5>
-					<p>
-						At Hungry Panda, we don't just make dimsum. We make people happy. We understand how to best serve our customers. We view food not just as an end product, but as a fine work of art. Every detail matters to us.
-					</p>
-
-				</div>
-				<div class="col-sm-4">
-				
-					<!-- Contact info -->
-					<h5 class="section_footer__heading">
-						Contact info
-					</h5>
-					<ul class="section_footer__info">
-						<li>
-							<i class="fas fa-map-marker-alt"></i> Jl. Boulevard Raya PA19/9, Kelapa Gading, Jakarta Utara
-						</li>
-						<li>
-							<i class="fab fa-whatsapp"></i> 08164857070
-						</li>
-						<li>
-							<i class="far fa-envelope"></i> <a href="mailto:admin@domain.com">marketing.hungrypanda@gmail.com</a>
-						</li>
-					</ul>
-
-				</div>
-				<div class="col-sm-4">
-				
-					<!-- Opening hours -->
-					<h5 class="section_footer__heading">
-						Opening hours
-					</h5>
-					<div class="section_footer__open">
-						<div class="section_footer__open__days">Weekdays</div>
-						<div class="section_footer__open__time">10:00 - 22:00</div>
-					</div>
-					<div class="section_footer__open">
-						<div class="section_footer__open__days">Weekends</div>
-						<div class="section_footer__open__time">10:00 - 22:00</div>
-					</div>
-
-				</div>
-			</div> <!-- / .row -->
-			<div class="row">
-				<div class="col-12">
-				
-					<!-- Copyright -->
-					<div class="section_footer__copyright">
-						&copy; <span id="js-current-year"></span> Hungry Panda. All rights reserved.<br>
-						Crafted by Morningtea Studios.
-					</div>
-
-				</div>
-			</div> <!-- / .row -->
-		</div> <!-- / .container -->
+		<!-- populated with JS -->
 	</footer>
 
 	<!-- JAVASCRIPT
@@ -711,6 +612,11 @@
 	<script src="assets/js/theme.js"></script>
 	<!-- endbuild -->
 	<script src="assets/js/custom.js"></script>
+
+	<script src="assets/js/custom/navbar.js"></script>
+	<script src="assets/js/custom/footer.js"></script>
+	<script src="assets/js/cms/contact_info.js"></script>
+	<script src="assets/js/cms/opening_hours.js"></script>
 
   </body>
 </html>

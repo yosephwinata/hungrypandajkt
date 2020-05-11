@@ -1,7 +1,7 @@
 <?php
 require_once 'config.php';
 
-// Defind variables
+// Define variables
 $json =		array();
 $email =	isset( $_POST['contact__form__email'] ) ? $_POST['contact__form__email'] : '';
 $name =		isset( $_POST['contact__form__name'] ) ? $_POST['contact__form__name'] : '';
