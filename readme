@@ -1,0 +1,2 @@
+You must use Node v11.15.0 in order for Gulp to work.
+As of today (May 2020), Gulp does not work well with the stable version of Node.
