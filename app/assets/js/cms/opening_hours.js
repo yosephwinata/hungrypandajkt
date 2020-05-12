@@ -10,6 +10,63 @@ const hours = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+DO NOT TOUCH ANYTHING BELOW THIS LINE
+===============================================================================================
+DO NOT TOUCH ANYTHING BELOW THIS LINE
+**/
+
 const parseHours = () => {
 	let dayTimeHtml = ``;
 	hours.forEach(day => {
@@ -24,8 +81,5 @@ const parseHours = () => {
 	})
 	return dayTimeHtml;
 }
-
-
-
 
 document.getElementById("footer-day-time").innerHTML = parseHours();
