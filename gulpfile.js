@@ -83,7 +83,8 @@ gulp.task('useref', function() {
 var imagemin = require('gulp-imagemin');
 
 gulp.task('images', function() {
-  return gulp.src('app/assets/img/**/*.+(png|jpg|gif|svg)')
+  //make sure your image file extensions are listed here
+  return gulp.src('app/assets/img/**/*.+(png|jpg|gif|svg|jpeg|JPG)')
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/assets/img'))
 });
@@ -124,12 +125,21 @@ gulp.task('bootstrap', function() {
 
 var runSequence = require('run-sequence');
 
+// gulp.task('build', function(callback) {
+//   runSequence('clean:dist', 
+//     ['sass', 'useref', 'css', 'js', 'images', 'fonts', 'ico', 'plugins', 'bootstrap'], 
+//     callback);
+// });
+
+//Note: I tried to run 'gulp build' but got a weird error. So I run the sequence manually and it works!
+//Eg. gulp clean:dist, then gulp sass, then gulp useref, etc
+
+//I've finally solved it. I crashed because the tasks in the array run asynchronously.
+//I ditched the array so that the tasks are executed in sequential order.
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', 
-    ['sass', 'useref', 'css', 'js', 'images', 'fonts', 'ico', 'plugins', 'bootstrap'], 
+  runSequence('clean:dist', 'sass', 'useref', 'css', 'js', 'images', 'fonts', 'ico', 'plugins', 'bootstrap', 
     callback);
 });
-
 
 /**
  * ACTION BY DEFAULT
