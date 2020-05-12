@@ -1,48 +1,43 @@
 const featuredMenu = {
   featuredMenuList: [
     {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
+      name: "Ayam Goreng Terasi",
+      image: "ayam_goreng_terasi.jpeg",
+      price: 49
+    },
+    {
+      name: "Buncis Sapi Sichuan",
+      image: "buncis_sapi_sichuan.jpeg",
+      price: 49
+    },
+    {
+      name: "Kangkung Hungry Panda",
+      image: "kangkung_special_hp.JPG",
+      price: 39
+    },
+    {
+      name: "Nasi Gorng Yang Chow",
+      image: "nasi_goreng_yangchow.JPG",
+      price: 39
+    },
+    {
+      name: "Sapi Lada Hitam",
+      image: "sapi_lada_hitam.jpeg",
+      price: 59
+    },
+    {
+      name: "Polo Pao Panggang",
+      image: "polopao_panggang.jpeg",
       price: 19
     },
     {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
+      name: "Onde Wijen Hitam",
+      image: "onde_wijen_hitam.JPG",
       price: 19
     },
     {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
-      price: 19
-    },
-    {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
-      price: 19
-    },
-    {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
-      price: 19
-    },
-    {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
-      price: 19
-    },
-    {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
-      price: 19
-    },
-    {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
-      price: 19
-    },
-    {
-      name: "Siew Mai",
-      image: "siew_mai.jpeg",
+      name: "Hakau",
+      image: "hakau.jpeg",
       price: 19
     },
     {

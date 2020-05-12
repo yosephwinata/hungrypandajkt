@@ -73,7 +73,7 @@ DO NOT TOUCH ANYTHING BELOW THIS LINE
 //If index.html then execute welcome-section
 const path = window.location.pathname;
 const page = path.split("/").pop(); 
-if (page === 'index.html') {
+if (page === 'index.html' || page === '') {
   document.getElementById("welcome-section-whatsapp").innerHTML = `
     <a href="tel:${contact.whatsapp}">
       <i class="fab fa-whatsapp"> ${contact.whatsapp}</i>
