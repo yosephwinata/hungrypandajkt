@@ -13118,6 +13118,11 @@ body
     width: 100%;
 }
 
+.section_testimonials__carousel .flickity-button
+{
+    display: none;
+}
+
 .section
 {
     /*** Sections: Welcome ***/
