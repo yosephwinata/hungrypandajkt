@@ -3,55 +3,55 @@ const frozenDimsum = {
     {
       name: "Frozen Siew Mai (10 pcs)",
       category: "frozendimsum",
-      image: "siew_mai.jpeg",
+      image: "siew_mai.jpg",
       price: 62.5
     },
     {
       name: "Frozen Hakau (10 pcs)",
       category: "frozendimsum",
-      image: "hakau.jpeg",
+      image: "hakau.jpg",
       price: 62.5
     },
     {
       name: "Frozen Pakcoy Dumpling (10 pcs)",
       category: "frozendimsum",
-      image: "kaki_ayam.jpeg",
+      image: "kaki_ayam.jpg",
       price: 62.5
     },
     {
       name: "Frozen Kuo Tie (10 pcs)",
       category: "frozendimsum",
-      image: "shanghai_kuotie.jpeg",
+      image: "shanghai_kuotie.jpg",
       price: 62.5
     },
     {
       name: "Frozen Onde Wijen Hitam (10 pcs)",
       category: "frozendimsum",
-      image: "onde_wijen_hitam.JPG",
+      image: "onde_wijen_hitam.jpg",
       price: 62.5
     },
     {
       name: "Frozen Pangsit Udang Mayonnaise (10 pcs)",
       category: "frozendimsum",
-      image: "pangsit_udang_mayonnaise.jpeg",
+      image: "pangsit_udang_mayonnaise.jpg",
       price: 62.5
     },
     {
       name: "Frozen Mantou (10 pcs)",
       category: "frozendimsum",
-      image: "mantou_goreng.jpeg",
+      image: "mantou_goreng.jpg",
       price: 43
     },
     {
       name: "Frozen Lumpia Sayuran (12 pcs)",
       category: "frozendimsum",
-      image: "lumpia_sayuran.jpeg",
+      image: "lumpia_sayuran.jpg",
       price: 75
     },
     {
       name: "Frozen Bakpao Telor Asin (8 pcs)",
       category: "frozendimsum",
-      image: "bakpao_telor_asin.jpeg",
+      image: "bakpao_telor_asin.jpg",
       price: 58
     },
     {
@@ -63,19 +63,19 @@ const frozenDimsum = {
     {
       name: "Frozen Char Siew Pao (7 pcs)",
       category: "frozendimsum",
-      image: "charsiewpao.jpeg",
+      image: "charsiewpao.jpg",
       price: 44
     },
     {
       name: "Frozen Lo Mai Kai (6 pcs)",
       category: "frozendimsum",
-      image: "lomaikai.jpeg",
+      image: "lomaikai.jpg",
       price: 65
     },
     {
       name: "Frozen Kaki Ayam (5 porsi)",
       category: "frozendimsum",
-      image: "kaki_ayam.jpeg",
+      image: "kaki_ayam.jpg",
       price: 95
     }
   ]
