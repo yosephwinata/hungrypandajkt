@@ -84,7 +84,7 @@ var imagemin = require('gulp-imagemin');
 
 gulp.task('images', function() {
   //make sure your image file extensions are listed here
-  return gulp.src('app/assets/img/**/*.+(png|jpg|gif|svg|jpeg|JPG)')
+  return gulp.src('app/assets/img/**/*.+(png|jpg|gif|svg|jpeg)')
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/assets/img'))
 });
