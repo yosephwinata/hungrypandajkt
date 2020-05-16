@@ -58,7 +58,7 @@ document.getElementById("footer").innerHTML = `
 				<!-- Copyright -->
 				<div class="section_footer__copyright">
 					&copy; <span id="js-current-year"></span> Hungry Panda. All rights reserved.<br>
-					Crafted by Morningtea Studios.
+					Crafted by Yoseph Winata.
 				</div>
 
 			</div>
